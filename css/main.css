@@ -1,1 +1,332 @@
 @import url('../css/common.css');
+
+* {
+    box-sizing: border-box;
+}
+
+/* .warp {
+    width: 100%;
+} */
+
+header {
+    background: rgba(217, 217, 217, 0.3);
+    /* border: 1px solid #000; */
+    position: fixed;
+    width: 100%;
+    text-shadow: 1px 1px 2px black;
+    z-index: 9999;
+}
+
+
+.inner-header {
+    /* float: left; */
+    width: 84%;
+    margin: 0 auto;
+    /* background: rgba(211, 211, 211, 0.83); */
+    color: rgba(255, 255, 255, 0.941);
+    font-size: 1.3em;
+}
+.inner-header .logo {
+
+    float: left;
+}
+
+.inner-header .gnb {
+    float: left;
+    padding-top: 65px;
+    
+    
+}
+.inner-header .gnb ul li {
+      float: left;
+      padding-left: 30px;
+
+}
+/* .inner-header .tnb {
+    padding-left: 100px;
+} */
+
+.inner-header .tnb {
+    margin-left: 800px;
+}
+.inner-header .tnb li {
+    float: left;
+    padding-top: 65px;
+    padding-right: 15px;
+    
+}
+
+.inner-header .tnb li:last-child {
+    padding-right: 0;
+    border: 1px solid #000;
+    border-radius: 40px;
+    border-color: lightgray;
+    padding: 5px 15px;
+    margin-top: 60px;
+}
+
+
+.inner-header .tnb li i {
+    padding-right: 10px;
+}
+
+/* header 끝 */
+
+.main {
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    background: url('../img/vis_4.jpg') no-repeat center/cover;
+    margin-bottom: 100px;
+}
+
+.main .main-title {
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -20%);
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Exo2';
+}
+
+.main .main-title h2 {
+    font-family: 'Exo2';
+    font-size: 3em;
+    padding-bottom: 50px;
+}
+
+.main .main-title p {
+
+    font-size: 1.5em;
+    padding-bottom: 30px;
+    
+}
+
+.main .main-title a {
+    border: 1px solid #dbdbdb;
+    padding: 10px 40px;
+    border-radius: 40px;
+    /* transition-delay: 0.5s; */
+    transition-property: all;
+    transition-timing-function: linear;
+}
+.main .main-title a:hover {
+    background: rgba(240, 240, 211, 0.2);
+    
+}
+
+/* section about 작업 */
+
+section.about {
+    width: 84%;
+    background: white;
+    text-align: center;
+}
+
+section.about .title {
+    width: 100%;
+    margin: 0 8% 8%;
+
+    /* font-size: 2.5em; */
+    font-family: 'Exo2';
+}
+section.about .title h2 {
+    font-weight: 700;
+    font-size: 3.4em;
+    padding-bottom: 10px;
+}
+
+section.about .title p {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+section.about .sub-container {
+    width: 100%;
+    margin: 0 8% 8%;
+
+    position: relative;
+    text-align: left;
+}
+section.about .sub-container li {
+    float: left;
+    width: 33.33%;
+}
+section.about .sub-container li img {
+    width: 100%;
+}
+section.about .sub-container .text {
+    padding: 20px;
+    line-height: 25px;
+    position: relative;
+}
+section.about .sub-container .text h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+section.about .sub-container .text .more {
+    padding-top: 5px;
+    text-indent: 10px;
+    position: relative;
+    top: 0px;
+    font-weight: 600;
+}
+section.about .sub-container .text .more::before {
+    content: '→';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background: orange;
+    float: left;
+    position: relative;
+    top: 0px;
+    
+}
+
+section.innovation {
+    width: 84%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+
+
+section.innovation .title h2 {
+    font-size: 3em;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-family: 'Exo2';
+}
+section.innovation .title p {
+    padding-bottom: 50px;
+    font-size: 1.1em;
+}
+section.innovation .sub-container {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    background: url('../img/product_1.jpg') no-repeat center/cover;
+}
+section.innovation .sub-container .inner {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    top: 70%;
+    background: rgb(15, 15, 65);
+}
+
+section.innovation .sub-container h3 {
+    font-family: 'Exo2';
+    text-align: left;
+    background: white;
+    font-size: 1.5em;
+    padding: 20px 0 20px 40px;
+}
+section.innovation .sub-container .bottom {
+    position: relative;
+}
+section.innovation .sub-container p {
+    color: white;
+    float: left;
+    padding: 50px ;
+    text-align: left;
+}
+section.innovation .sub-container a {
+    float: right;
+    background: orange;
+    position: absolute;
+    top: 35%;
+    right: 7%;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 40px;
+}
+section.innovation .sub-container a:hover {
+    background: rgb(193, 118, 13);
+    text-decoration: underline;
+}
+
+
+/* innvoation 끝 */
+
+section.me {
+    width: 100%;
+    height: 120vh;
+    background: url('../img/me.jpg') no-repeat center/cover;
+}
+
+section.me .title {
+    width: 84%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 70px;
+}
+section.me .title h2 {
+    font-size: 3em;
+    font-family: 'Exo2';
+    padding-bottom: 10px;
+}
+section.me .title p {
+    font-size: 1.1em;
+}
+
+section.me .sub-container {
+    width: 84%;
+    margin: 0 auto;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid black;
+    padding: 25px 0px 60px 60px;
+    position: relative;
+}
+section.me .sub-container h3 {
+    font-size: 1.2em;
+    padding-bottom: 15px;
+    position: relative;
+    left: 0px;
+    font-weight: 600;
+}
+section.me .sub-container h3 i {
+    position: relative;
+    left: -30px;
+    color: orange;
+}
+section.me .sub-container p {
+    position: relative;
+    left: 18px;
+    line-height: 23px;
+    font-weight: 500;
+}
+section.me .sub-container li a {
+    padding: 18px;
+    position: relative;
+    top: 20px;
+    font-weight: 700;
+}
+section.me .sub-container li a i {
+    color: orange;
+}
+section.me .sub-container li:last-child {
+    padding-top: 80px;
+    
+}
+
+section.me #incruit-btn {
+    width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background: rgba(211, 210, 210, 0);
+    
+    border: 1px solid #000;
+}
+section.me .sub-container .in li{
+    float: left;
+
+}
